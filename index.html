@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banana speak</title>
     <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        nav{
+            background-color: yellow;
+        }
         textarea {
             width: 70%;
             display: block;
         }
 
-        #output{
+        #output {
             border: 1px solid black;
             height: 65px;
             margin: 1 rem;
@@ -19,15 +27,27 @@
         }
     </style>
 </head>
+
 <body>
-   <h1>talk banana</h1> 
-   
-   <textarea id="txtarea-input" placeholder="Enter a sentence in English and we'll translate it into Banana"></textarea>
+    <nav>
+        <h1>talk banana</h1>
+    </nav>
 
-   <button id="btn-translate">Translate</button>
+    <main>
+        <textarea id="txtarea-input"
+            placeholder="Enter a sentence in English and we'll translate it into Banana"></textarea>
 
-    <div>Output will come below : </div>
-    <div id="output"></div>
-   <script src="app.js" type="text/javascript"></script>
+        <button id="btn-translate">Translate</button>
+
+        <div>Output will come below : </div>
+        <div id="output"></div>
+    </main>
+
+    <footer>
+        Here comes footer
+    </footer>
+
+    <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
